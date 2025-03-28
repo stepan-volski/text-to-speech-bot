@@ -32,7 +32,7 @@ async function transcribeAudio(filePath) {
     
     try {
         const response = await axios.post(
-            "https://api.deepgram.com/v1/listen?model=base&smart_format=true&language=ru",
+            "https://api.deepgram.com/v1/listen?model=whisper&smart_format=true&language=ru",
             audioData,
             {
                 headers: {
